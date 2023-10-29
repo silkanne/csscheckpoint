@@ -5,53 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/30b423238f.js" crossorigin="anonymous"></script> <!--fontawesome link for icoins-->
+    <link rel="stylesheet" href="./Styles/styles.css">
+    
   </head>
 
   <body>
     <!--header section -->
-    <header>
+    <header class="horizontal">
       <!-- parent div -->
 
-      <div>
-        <!--page logo div-->
-        <img src="./image/amike logo.png" alt="pagelogo" />
+      <div id="logo"> <!--page logo div-->
+        <img src="./image/amike logo.png" alt="pagelogo" width="100px"/>
       </div>
 
       <nav>
         <!--nav section-->
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="horizontal" id="color">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#service">Service</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#blog">Blog</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!--main section -->
-    <main>
-        <section> <!--perent section for main page-->
+    <main id="main">
+        <section id="home" class="horizontal"> <!--perent section for main page-->
             <div><!--this div holds icons and main pages information-->
-         <div> <!--this div holds icon-->
-        <div><i class="fa-brands fa-facebook"></i></div>
-        <div><i class="fa-brands fa-twitter"></i></div>
-        <div><i class="fa-brands fa-pinterest"></i></div>
-        <div><i class="fa-brands fa-instagram"></i></div>
-        <div><i class="fa-brands fa-behance"></i></div>
+         <div class="social-icons horizontal"> <!--this div holds icon-->
+        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icon"><i class="fa-brands fa-pinterest"></i></div>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-behance"></i></div>
          </div>
+
          <h2>I am Jonathan Doe</h2>
-         <p>i'm Jonathan, professional web developer with long time experience in this field​</p>
-         <div><!--portfolio an youtube icon-->
-         <button> My Portfolio</button>
-         <button><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></button>
+         <p>i'm Jonathan, professional web developer with <br> long time experience in this field​</p>
+         <div><!--port folio an youtube icon-->
+         <button id="change" class="icon"> My Portfolio</button>
+         <button id="you"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></button>
          </div>
             </div>
 
-            <div> <!--main page image of a man standing-->
-          <img src="./image/man-01.png" alt="man picture">
+            <div id="man"> <!--main page image of a man standing-->
+          <img src="./image/man-01.png" alt="man picture" width="400px">
             </div>
         </section> <!--home page section ends here-->
 
